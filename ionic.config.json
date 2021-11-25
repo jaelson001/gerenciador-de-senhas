@@ -1,0 +1,7 @@
+{
+  "name": "gerenciador-de-senhas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
