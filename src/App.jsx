@@ -1,9 +1,9 @@
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
-import ViewMessage from './pages/ViewMessage';
-
+import Home from './pages/Home.jsx';
+import ViewMessage from './pages/ViewMessage.jsx';
+import {GlobalContext} from './components/Global';
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -21,23 +21,25 @@ import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
 
 /* Theme variables */
-import './theme/variables.css';
+//import './theme/variables.css';
 
-const App: React.FC = () => (
+const App = () => (
   <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route path="/" exact={true}>
-          <Redirect to="/home" />
-        </Route>
-        <Route path="/home" exact={true}>
-          <Home />
-        </Route>
-        <Route path="/message/:id">
-           <ViewMessage />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
+    <GlobalContext>
+      <IonReactRouter>
+        <IonRouterOutlet>
+          <Route path="/" exact={true}>
+            <Redirect to="/home" />
+          </Route>
+          <Route path="/home" exact={true}>
+            <Home />
+          </Route>
+          <Route path="/additem">
+             <ViewMessage />
+          </Route>
+        </IonRouterOutlet>
+      </IonReactRouter>
+    </GlobalContext>
   </IonApp>
 );
 

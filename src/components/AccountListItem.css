@@ -1,6 +1,23 @@
+ion-title{
+  width: 100%;
+  text-align: center;
+}
+ion-input[placeholder="Pesquisar"] {
+  border: none;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  max-width: 80%;
+  padding-right: 20px !important;
+  margin: auto;
+  border-bottom: 1px solid #000;
+}
 ion-item {
-  --padding-start: 0;
-  --inner-padding-end: 0;
+  --padding-start: 10px;
+  --inner-padding-end: 10;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #000;
 }
 
 ion-label {
@@ -20,14 +37,16 @@ ion-item p {
   width: 95%;
 }
 
-ion-item .date {
+ion-item .controls {
   float: right;
-  align-items: center;
+  align-items: space-evenly;
   display: flex;
 }
 
 ion-item ion-icon {
-  color: #c9c9ca;
+  color: #000;
+  font-size: 20px;
+  padding-right: 10px;
 }
 
 ion-item ion-note {
