@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">gerenciador-de-senhas</string>
+    <string name="title_activity_main">gerenciador-de-senhas</string>
+    <string name="package_name">com.exodo.lock</string>
+    <string name="custom_url_scheme">com.exodo.lock</string>
+</resources>

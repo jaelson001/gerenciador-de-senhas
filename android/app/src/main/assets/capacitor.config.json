@@ -1,0 +1,6 @@
+{
+	"appId": "com.exodo.lock",
+	"appName": "gerenciador-de-senhas",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
